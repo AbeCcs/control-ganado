@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.html',   // verifica que este archivo exista
+  styleUrls: ['./app.css'],    // plural y arreglo
+  standalone: true,
+  imports: [RouterOutlet,RouterLink]                // necesario para <router-outlet>
 })
 export class App {
   protected readonly title = signal('control-ganado');

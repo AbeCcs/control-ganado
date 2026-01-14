@@ -1,0 +1,15 @@
+<h2>Ganados</h2>
+<table>
+  <tr>
+    <th>Número</th>
+    <th>Fecha Compra</th>
+    <th>Peso</th>
+    <th>Clasificación</th>
+  </tr>
+  <tr *ngFor="let g of ganados">
+    <td>{{ g.numero }}</td>
+    <td>{{ g.fecha_compra | date }}</td>
+    <td>{{ g.peso }}</td>
+    <td>{{ g.clasificacion }}</td>
+  </tr>
+</table>

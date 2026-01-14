@@ -1,0 +1,16 @@
+<h2>Agregar Ganado</h2>
+<form (ngSubmit)="agregarGanado()">
+  <label>Número:</label>
+  <input type="number" [(ngModel)]="numero" name="numero" required>
+
+  <label>Fecha de Compra:</label>
+  <input type="date" [(ngModel)]="fecha_compra" name="fecha_compra" required>
+
+  <label>Peso:</label>
+  <input type="number" [(ngModel)]="peso" name="peso">
+
+  <label>Clasificación:</label>
+  <input type="text" [(ngModel)]="clasificacion" name="clasificacion" required>
+
+  <button type="submit">Agregar</button>
+</form>
