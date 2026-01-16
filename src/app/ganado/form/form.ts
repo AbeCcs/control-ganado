@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-form',
   templateUrl: './form.html',
+  styleUrls: ['./form.scss'],
   standalone: true,
   imports: [CommonModule, FormsModule]
 })
@@ -20,7 +21,7 @@ export class FormComponent {
       numero: this.numero,
       fecha_compra: this.fecha_compra,
       peso: this.peso,
-      clasificacion: this.clasificacion
+      clasificacion: this.clasificacion,
     });
 
     if (error) console.error(error);

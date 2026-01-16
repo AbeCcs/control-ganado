@@ -4,7 +4,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',   // verifica que este archivo exista
-  styleUrls: ['./app.css'],    // plural y arreglo
+  styleUrls: ['./app.scss'],    // plural y arreglo
   standalone: true,
   imports: [RouterOutlet,RouterLink]                // necesario para <router-outlet>
 })

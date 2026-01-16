@@ -1,0 +1,83 @@
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+    color: #fff;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  tr {
+    transition: background-color 0.25s ease;
+    
+    &:nth-child(even) {
+      background-color: #f8f9fa; 
+    }
+
+    &:hover {
+      background-color: #eaf1fc;
+    }
+  }
+
+  td {
+    color: #34495e;
+    font-size: 0.9rem;
+  }
+
+  /* Bordes redondeados para las esquinas de la tabla */
+  tr:first-child th:first-child {
+    border-top-left-radius: 0.75rem;
+  }
+
+  tr:first-child th:last-child {
+    border-top-right-radius: 0.75rem;
+  }
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 0.75rem;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  /* Scroll horizontal en pantallas pequeñas */
+  @media (max-width: 768px) {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .historial {
+  background-color: #f4f6f8;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #3498db;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.9rem;
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+}
+
+}
