@@ -5,8 +5,10 @@
     <th>Número</th>
     <th>Fecha Compra</th>
     <th>Peso</th>
-    <th>Clasificación</th>
+    <th>Características</th>
     <th>Fecha Venta Estimada</th>
+    <th>Lote</th>
+    <th>Trabajador</th>
     <th>Acciones</th>
   </tr>
 
@@ -18,6 +20,8 @@
       <td>{{ g.peso }}</td>
       <td>{{ g.clasificacion }}</td>
       <td>{{ g.fecha_venta_estimada | date }}</td>
+      <td>{{g.lote}}</td>
+      <td>{{g.trabajador}}</td>
       <td>
         <button (click)="toggleHistorial(i)">
           {{ g.showHistorial ? 'Ocultar historial' : 'Ver historial' }}
